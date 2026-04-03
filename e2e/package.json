@@ -1,0 +1,14 @@
+{
+  "name": "pave-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "End-to-end tests for pave CLI",
+  "scripts": {
+    "build": "cargo build --manifest-path ../Cargo.toml",
+    "test": "npx @microsoft/tui-test",
+    "test:trace": "npx @microsoft/tui-test --trace"
+  },
+  "devDependencies": {
+    "@microsoft/tui-test": "^0.0.4"
+  }
+}
