@@ -3,6 +3,12 @@ name = "pave"
 version = "0.1.0"
 edition = "2021"
 description = "A cross-platform CLI tool for managing the PATH"
+license = "MIT"
+repository = "https://github.com/microsoft/pave"
+homepage = "https://github.com/microsoft/pave"
+keywords = ["cli", "path", "shell", "command-line"]
+categories = ["command-line-utilities"]
+readme = "README.md"
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }
