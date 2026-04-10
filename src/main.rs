@@ -3,7 +3,7 @@ mod commands;
 mod path_store;
 mod util;
 
-use clap::Parser;
+use clap::{CommandFactory, Parser};
 use cli::{Cli, Commands};
 use console::Term;
 
@@ -15,7 +15,12 @@ fn main() -> anyhow::Result<()> {
 
     let cli = Cli::parse();
 
-    match &cli.command {
+    let Some(command) = &cli.command else {
+        Cli::command().print_help()?;
+        return Ok(());
+    };
+
+    match command {
         Commands::Add { path, all } => commands::add::run(path, *all)?,
         Commands::Remove { path } => commands::remove::run(path.as_deref())?,
         Commands::List => commands::list::run()?,
