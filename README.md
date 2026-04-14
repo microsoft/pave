@@ -13,11 +13,15 @@ brew tap microsoft/pave https://github.com/microsoft/pave
 brew install pave
 ```
 
-#### build from source
+#### winget (windows)
 
 ```sh
-git clone --depth 1 https://github.com/microsoft/pave.git ~/.pave && cargo install --path ~/.pave && rm -rf ~/.pave
+winget install Microsoft.Pave
 ```
+
+#### download from releases
+
+download the latest [release](https://github.com/microsoft/pave/releases)
 
 ### Shell Plugin
 
