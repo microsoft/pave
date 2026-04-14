@@ -19,11 +19,9 @@ brew install pave
 winget install Microsoft.Pave
 ```
 
-#### build from source
+#### download from releases
 
-```sh
-git clone --depth 1 https://github.com/microsoft/pave.git ~/.pave && cargo install --path ~/.pave && rm -rf ~/.pave
-```
+download the latest [release](https://github.com/microsoft/pave/releases)
 
 ### Shell Plugin
 
