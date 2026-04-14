@@ -1,28 +1,28 @@
 class Pave < Formula
   desc "A cross-platform CLI tool for managing the PATH"
   homepage "https://github.com/microsoft/pave"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/microsoft/pave/releases/download/v#{version}/pave-aarch64-apple-darwin.tar.gz"
-      sha256 "7d3b760231efa7a0415cb7c48b8702cdf3ec4094934fb5d3bad1400e3cd81382"
+      sha256 "271d2182d16ea700ad93e089bc7c36c9878c2d47a64ce3d617e16942468e3451"
     end
     on_intel do
       url "https://github.com/microsoft/pave/releases/download/v#{version}/pave-x86_64-apple-darwin.tar.gz"
-      sha256 "60c778a636e0d52cd9cbf854bb563c7657dde2c1b453cc31119b21929959675c"
+      sha256 "d218ac20dfadda0655ca22938a7cd56bf60e7112c78e96f6e0b995964f63ee59"
     end
   end
 
    on_linux do
     on_arm do
       url "https://github.com/microsoft/pave/releases/download/v#{version}/pave-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "c81b13ff54cffc46f260b48431276c90e10ec5a2d9e0179602ff1d84cbb2208c"
+      sha256 "a4efe9980b408c9c1b249635c1bb55fcd920e254aa2a3c8e39522dd39e5f6430"
     end
     on_intel do
       url "https://github.com/microsoft/pave/releases/download/v#{version}/pave-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "17e4380c27006ff12f97107b5a34acb4e980a61a0bfb36688fa8f1327b358cf4"
+      sha256 "f1d0efb2bee210c974b365ca406777a5978c5cedb1f4eecded364a0e848281dd"
     end
   end
 

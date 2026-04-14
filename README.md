@@ -13,6 +13,12 @@ brew tap microsoft/pave https://github.com/microsoft/pave
 brew install pave
 ```
 
+#### winget (windows)
+
+```sh
+winget install Microsoft.Pave
+```
+
 #### build from source
 
 ```sh
