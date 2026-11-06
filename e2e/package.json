@@ -9,6 +9,6 @@
     "test:trace": "npx @microsoft/tui-test --trace"
   },
   "devDependencies": {
-    "@microsoft/tui-test": "^0.0.4"
+    "@microsoft/tui-test": "^0.1.1"
   }
 }
